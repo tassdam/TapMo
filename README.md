@@ -13,14 +13,14 @@ TapMo is a text-based animation pipeline for generating motion in a wide variety
 <!-- An overview of the TapMo pipeline. Given a non-rigged mesh and a motion description input by the user, the Mesh Handle Predictor $\lambda (\cdot)$ predicts mesh handles and skinning weights to control the mesh. The Shape-aware Motion Diffusion $\mu (\cdot)$ generates a text-guided and mesh-specific motion for the character using the motion description and the mesh deformation feature ${f}_{\phi}$ extracted by the Mesh Handle Predictor. -->
 
 ## Prerequisites
-- Python >= 3.7
+- Python >= 3.10 
 - [Pytorch](https://pytorch.org/) >= 1.4
 - [Pytorch-geometric](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html)
 
 ## Quick Start
 ### 1. Conda environment
 ```
-conda create python=3.8 --name tapmo
+conda create python=3.10 --name tapmo
 conda activate tapmo
 ```
 
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Download the datasets and the requriements
-Download the processed datasets and the requriements from [Google dirve](https://drive.google.com/drive/folders/1qViyiHHSXLD7l3RU-Fp8GSpO25td3oy-?usp=sharing)
+Download the processed datasets and the requriements from [Google Drive](https://drive.google.com/drive/folders/1qViyiHHSXLD7l3RU-Fp8GSpO25td3oy-?usp=sharing)
 ```
 cd TapMo
 unzip datasets.zip -d ./
